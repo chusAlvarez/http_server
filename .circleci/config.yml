@@ -18,9 +18,9 @@ jobs:
             docker push chusalvarez/adjust
 workflows:
   version: 2
-  build_test_deploy:
+  build_deploy:
     jobs:
-      - deploy_docker:
+      - deploy_docker
 #          filters:
 #            branches:
 #              only: main
