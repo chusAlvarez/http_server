@@ -23,6 +23,6 @@ workflows:
   build_deploy:
     jobs:
       - deploy_docker
-#          filters:
-#            branches:
-#              only: main
+          filters:
+            branches:
+              only: main
