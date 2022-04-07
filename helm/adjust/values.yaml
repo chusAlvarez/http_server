@@ -1,0 +1,17 @@
+replicaCount: 2
+name: adjust
+namespace: adjust
+
+image:
+  repository: chusalvarez/adjust
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+# Seems minikube cant handle resource quotas (at least my current version)
+#resources:
+#  requests:
+#    cpu: "1"
+#    memory: "60Mi"
+#  limits:
+#    cpu: "3"
+#    memory: "180Mi"
